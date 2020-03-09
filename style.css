@@ -39,7 +39,11 @@ body {
     text-align: left;
 }
 
-.detailed_img {
+.img_small {
+    width: 50px;
+}
+
+.img_detailed {
     border: 1px solid #9b4465;
 }
 
