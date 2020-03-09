@@ -1,0 +1,82 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.menu  {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #9b4465;
+    font: bold 24px Arial;
+    text-decoration: none; 
+}
+
+/* Убрал подчёркивание гиперссылки между картинкой и текстом*/
+.catalog_item {
+    text-decoration: none;
+}
+
+.item_title {
+    color: black;
+    background-color: #eaeaea;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.short {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.detailed {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.detailed_img {
+    border: 1px solid #9b4465;
+}
+
+.characteristics {
+    list-style-image: url(images/icons8-bar-26.png);
+}
+
+.characteristics b{
+    color: #9b4465;
+}
+
+.characteristics li{
+    font-size: 14px;
+}
+
+.contacts{
+    font-size: 14px;
+}
+
+.contacts label{
+    color: #9b4465;
+    font-weight: bold;
+}
+
+.contacts input[type="text"], input[type="email"] {
+    color: saddlebrown;
+    font-style: italic;
+    width: 400px;
+}
+
+.contacts textarea {
+    color: saddlebrown;
+    font-style: italic;
+    width: 500px;
+    height: 300px;
+}
+
+.contacts input[type="submit"], input[type="reset"] {
+    font-weight: bold;
+}
