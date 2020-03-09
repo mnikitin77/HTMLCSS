@@ -6,7 +6,7 @@ body {
     list-style-type: none;
 }
 
-.menu li a {
+.menu_item {
     color: #9b4465;
     font: bold 24px Arial;
     text-decoration: none; 
@@ -24,14 +24,14 @@ body {
     font-size: 18px;
 }
 
-.short {
+.short_descr {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
 
-.detailed {
+.detailed_descr {
     color: #484343;
     font-size: 16px;
     font-weight: 400;
@@ -47,15 +47,16 @@ body {
     border: 1px solid #9b4465;
 }
 
-.characteristics {
+.chars {
     list-style-image: url(images/icons8-bar-26.png);
 }
 
-.characteristics b{
+.chars_name{
     color: #9b4465;
+    font-weight: bold;
 }
 
-.characteristics li{
+.chars_item{
     font-size: 14px;
 }
 
@@ -63,24 +64,24 @@ body {
     font-size: 14px;
 }
 
-.contacts label{
+.contacts_label{
     color: #9b4465;
     font-weight: bold;
 }
 
-.contacts input[type="text"], input[type="email"] {
+.contacts_input {
     color: saddlebrown;
     font-style: italic;
     width: 400px;
 }
 
-.contacts textarea {
+.contacts_msg {
     color: saddlebrown;
     font-style: italic;
     width: 500px;
     height: 300px;
 }
 
-.contacts input[type="submit"], input[type="reset"] {
+.contacts_btn {
     font-weight: bold;
 }
