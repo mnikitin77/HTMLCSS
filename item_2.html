@@ -6,16 +6,19 @@
     <link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
 <body>
-    <ul class="menu">
-        <li><a class="menu_item" href="index.html">Главная</a></li>
-        <li><a class="menu_item" href="catalog.html">Каталог</a></li>
-        <li><a class="menu_item" href="contacts.html">Контакты</a></li>   
-    </ul>
+    <div class="header">
+        <img class="logo" src="http://devicebox.ru/wp-content/uploads/2016/06/simple.jpg" alt="Логотип сайта" title="Логотип">
+        <ul class="menu">
+            <li><a class="menu_item" href="index.html">Главная</a></li>
+            <li><a class="menu_item" href="catalog.html">Каталог</a></li>
+            <li><a class="menu_item" href="contacts.html">Контакты</a></li>   
+        </ul>
+    </div>
     <hr>
     <h1>Амароне делла Вальполичелла. Кантине Ди Ора</h1>    
     <p>Amarone della Valpolicella. Cantine di Ora</p>
     <a href="images/item_2.png" target="_blanc">
-        <img class="img_detailed img_small" src="images/item_2.png" alt="изображение Амароне-делла-Вальполичелла-Кантине-Ди-Ора." title="Амароне делла Вальполичелла. Кантине Ди Ора.">
+        <img class="img_small item_img" src="images/item_2.png" alt="изображение Амароне-делла-Вальполичелла-Кантине-Ди-Ора." title="Амароне делла Вальполичелла. Кантине Ди Ора.">
     </a>
     <h2 class="item_title">Описание товара</h2>
     <p class="short_descr">Вино защищенного наименования места происхождения, регион Венето (Италия) полусухое красное, категории DOCG.</p>
@@ -31,7 +34,36 @@
     </ul>   
     <h2 class="item_title">Подробное описание товара</h2>
     <p class="detailed_descr">Вино защищенного наименования места происхождения, регион Венето (Италия) полусухое красное, категории DOCG. Изготовлено из винограда сортов Корвина – 60%, Корвиноне-30%, Рондинелла -10%. Вино обладает красно-рубиновым цветом с гранатовыми отблесками, насыщенными фруктовыми ароматами, с нотками вишни и ванили во вкусе. Прекрасно как само по себе, так и в сочетании с блюдами из дичи, с острыми мясными закусками, а также со зрелыми сырами. Подавать при температуре 14-16°С.</p>    
-    <hr>
-    <footer><p>&copy;&nbsp;Все права защищены.</p></footer>
+    
+    <br>
+    <table class="item_info">
+        <tr class="item_info_row">
+            <td colspan="5"  class="item_info_header">Дополнительная информация</td>
+        </tr>
+        <tr class="item_info_row">
+            <td rowspan="3" class="item_info_decor_block"></td>
+            <td class="item_info_row_name">Что говорят люди</td>
+            <td class="item_info_col">Сливки, ежевика, джем</td>
+            <td class="item_info_col">Лакрица, перец</td>
+            <td class="item_info_col">Вишня, красный фрукт</td>
+        </tr>
+        <tr class="item_info_row">
+            <td class="item_info_row_name">Сочетание с едой</td>
+            <td class="item_info_col">Говядина</td>
+            <td class="item_info_col">Баранина</td>
+            <td class="item_info_col">Дичь (оленина, лосятина)</td>
+        </tr>
+        <tr class="item_info_row">
+            <td class="item_info_row_name">Ранжирование</td>
+            <td class="item_info_col">Топ 1% в мире</td>
+            <td class="item_info_col">Топ 5% вин из Amarone della Valpolicella</td>
+            <td class="item_info_col"></td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <hr>
+        &copy;&nbsp;Все права защищены.
+    </div>
 </body>
 </html>

@@ -6,16 +6,19 @@
     <link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
 <body>
-    <ul class="menu">
-        <li><a class="menu_item" href="index.html">Главная</a></li>
-        <li><a class="menu_item" href="catalog.html">Каталог</a></li>
-        <li><a class="menu_item" href="contacts.html">Контакты</a></li>   
-    </ul>
+    <div class="header">
+        <img class="logo" src="http://devicebox.ru/wp-content/uploads/2016/06/simple.jpg" alt="Логотип сайта" title="Логотип">
+        <ul class="menu">
+            <li><a class="menu_item" href="index.html">Главная</a></li>
+            <li><a class="menu_item" href="catalog.html">Каталог</a></li>
+            <li><a class="menu_item" href="contacts.html">Контакты</a></li>   
+        </ul>
+    </div>
     <hr>
     <h1>Порто Тони. Квинта до Инфантадо</h1>    
     <p>Porto Tawny. Quinta do Infantado</p>
     <a href="images/item_3.png" target="_blanc">
-        <img class="img_detailed img_small" src="images/item_3.png" alt="изображение Порто-Тони-Квинта-до-Инфантадо" title="Порто Тони. Квинта до Инфантадо" class="menu_item">
+        <img class="img_small item_img" src="images/item_3.png" alt="изображение Порто-Тони-Квинта-до-Инфантадо" title="Порто Тони. Квинта до Инфантадо" class="menu_item">
     </a>
     <h2 class="item_title">Описание товара</h2>
     <p class="short_descr">Вино специальное выдержанное, категории DOС.</p>
@@ -31,7 +34,36 @@
     </ul>
     <h2 class="item_title">Подробное описание товара</h2>
     <p class="detailed_descr">Вино специальное выдержанное, категории DOС. Изготовлено из винограда сортов Тоурига Насьональ, Тоурига Франко, Тинта Рориз выращенных в регионе Доуро, Португалия. Портвейн выдерживается в дубовых бочках не менее 3-х лет. Портвейн обладает золотисто – коричневым цветом, ароматами лесных орехов и спелых фруктов, с бархатистыми пряными нотками. Превосходно сочетается с орехами, сухофруктами, мякгими невыдержанными сырами, шоколадными и кофейными десертами или миндалем. Рекомендуется подавать при температуре 14-15°С.</p>
-    <hr>
-    <footer><p>&copy;&nbsp;Все права защищены.</p></footer>
+    
+    <br>
+    <table class="item_info">
+        <tr class="item_info_row">
+            <td colspan="5"  class="item_info_header">Дополнительная информация</td>
+        </tr>
+        <tr class="item_info_row">
+            <td rowspan="3" class="item_info_decor_block"></td>
+            <td class="item_info_row_name">Что говорят люди</td>
+            <td class="item_info_col">Карамель, ваниль, дуб</td>
+            <td class="item_info_col">Ореховый, миндаль, фундук</td>
+            <td class="item_info_col">Слива, ежевика, джем</td>
+        </tr>
+        <tr class="item_info_row">
+            <td class="item_info_row_name">Сочетание с едой</td>
+            <td class="item_info_col">Говядина</td>
+            <td class="item_info_col">Сладкие десерты</td>
+            <td class="item_info_col">Выдержанный и твёрдый сыр</td>
+        </tr>
+        <tr class="item_info_row">
+            <td class="item_info_row_name">Ранжирование</td>
+            <td class="item_info_col">Топ 8% в мире</td>
+            <td class="item_info_col">Топ 15% вин из Porto</td>
+            <td class="item_info_col"></td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <hr>
+        &copy;&nbsp;Все права защищены.
+    </div>
 </body>
 </html>
