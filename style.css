@@ -6,6 +6,14 @@ body {
     height: 100px;
 }
 
+.header {
+    border-bottom: 1px solid #9b4465;
+}
+
+.footer {
+    border-top: 1px solid #9b4465;
+}
+
 .menu {
     list-style-type: none;
 }
@@ -59,7 +67,7 @@ body {
 }
 
 .item_img:hover {
-    border-color: #f8f8f8;
+    border-color: transparent;
 }
 
 .chars {
