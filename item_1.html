@@ -6,64 +6,84 @@
     <link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">
-            <img class="logo" src="http://devicebox.ru/wp-content/uploads/2016/06/simple.jpg" alt="Логотип сайта" title="Логотип">
-        </a>
-        <ul class="menu">
-            <li><a class="menu_item" href="index.html">Главная</a></li>
-            <li><a class="menu_item" href="catalog.html">Каталог</a></li>
-            <li><a class="menu_item" href="contacts.html">Контакты</a></li>   
-        </ul>
-    </div>
-    <h1>Кло Ламот. Грав. Руж</h1>    
-    <p>Clos Lamothe. Graves. Rouge</p>
-    <a href="images/item_1.png" target="_blanc">
-        <img class="img_small item_img" src="images/item_1.png" alt="изображение Кло-Ламот-Грав-Руж" title="Кло Ламот. Грав. Руж.">
-    </a>
-    <h2 class="item_title">Описание товара</h2>
-    <p class="short_descr">Вино защищенного наименования места происхождения региона Бордо сухое красное категории AOC.</p>
-    <h2 class="item_title">Характеристики товара</h2>
-    <ul class="chars">
-        <li class="chars_item"><span class="chars_name chars_item">Тип вина: </span>Сухое</li>
-        <li class="chars_item"><span class="chars_name chars_item">Сорт винограда: </span>Мерло</li>
-        <li class="chars_item"><span class="chars_name chars_item">Регион: </span>Грав, Франция</li>
-        <li class="chars_item"><span class="chars_name chars_item">Год: </span>2013</li>
-        <li class="chars_item"><span class="chars_name chars_item">Алкоголь: </span>13,5%</li>
-        <li class="chars_item"><span class="chars_name chars_item">Объём: </span>0,75л</li>
-        <li class="chars_item"><span class="chars_name chars_item">Выдержка: </span>в барриках в течение 12 месяцев</li>
-    </ul>
-    <h2 class="item_title">Подробное описание товара</h2>
-    <p class="detailed_descr">Вино защищенного наименования места происхождения региона Бордо сухое красное категории AOC. Изготовлено из винограда сорта Мерло, произрастающего в субзоне Грав (Бордо, Франция). Вино красно-рубинового цвета с богатым фруктовым ароматом с доминантами черной смородины и вишни. Вкус округлый, мягкий, фруктовый с карамельными нотками. Послевкусие длительное и очень ароматное. Превосходно сочетается с блюдами из дичи и красного мяса с грибами и густыми соусами. Рекомендуется подавать при температуре 16-18°С.</p>    
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <img class="logo" src="http://devicebox.ru/wp-content/uploads/2016/06/simple.jpg" alt="Логотип сайта" title="Логотип">
+            </a>
+            <ul class="menu">
+                <li><a class="menu_item" href="index.html">Главная</a></li>
+                <li><a class="menu_item" href="catalog.html">Каталог</a></li>
+                <li><a class="menu_item" href="contacts.html">Контакты</a></li>   
+            </ul>
+        </div>
+        <div class="item_content">
+            <div class="item_title_block">
+                <h1>Кло Ламот. Грав. Руж</h1>    
+                <p>Clos Lamothe. Graves. Rouge</p>
+            </div>
+            <h2 class="item_header">Описание товара</h2>
+            <div class="item_short_info_block">
+                <div class="item_img_block">
+                    <a href="images/item_1.png" target="_blanc">
+                        <img class="img_small" src="images/item_1.png" alt="изображение Кло-Ламот-Грав-Руж" title="Кло Ламот. Грав. Руж.">
+                    </a>
+                </div>
+                <div class="item_short_descr_block">
+                    <p class="short_descr">Вино защищенного наименования места происхождения региона Бордо сухое красное категории AOC.</p>
+                </div>
+                <div class="buy_botton_block">Купить</div>
+            </div>
+            <h2 class="item_header">Характеристики товара</h2>
+            <div class="item_chars_block">
+                <ul class="chars">
+                    <li class="chars_item"><span class="chars_name chars_item">Тип вина: </span>Сухое</li>
+                    <li class="chars_item"><span class="chars_name chars_item">Сорт винограда: </span>Мерло</li>
+                    <li class="chars_item"><span class="chars_name chars_item">Регион: </span>Грав, Франция</li>
+                    <li class="chars_item"><span class="chars_name chars_item">Год: </span>2013</li>
+                    <li class="chars_item"><span class="chars_name chars_item">Алкоголь: </span>13,5%</li>
+                    <li class="chars_item"><span class="chars_name chars_item">Объём: </span>0,75л</li>
+                    <li class="chars_item"><span class="chars_name chars_item">Выдержка: </span>в барриках в течение 12 месяцев</li>
+                </ul>
+            </div>
+        
+            <h2 class="item_header">Подробное описание товара</h2>
+            <p class="detailed_descr">Вино защищенного наименования места происхождения региона Бордо сухое красное категории AOC. Изготовлено из винограда сорта Мерло, произрастающего в субзоне Грав (Бордо, Франция). Вино красно-рубинового цвета с богатым фруктовым ароматом с доминантами черной смородины и вишни. Вкус округлый, мягкий, фруктовый с карамельными нотками. Послевкусие длительное и очень ароматное. Превосходно сочетается с блюдами из дичи и красного мяса с грибами и густыми соусами. Рекомендуется подавать при температуре 16-18°С.</p>    
+        
+            <div class="item_info_block">
+                <table class="item_info">
+                    <tr class="item_info_row">
+                        <td colspan="5"  class="item_info_header">Дополнительная информация</td>
+                    </tr>
+                    <tr class="item_info_row">
+                        <td rowspan="3" class="item_info_decor_block"></td>
+                        <td class="item_info_row_name">Что говорят люди</td>
+                        <td class="item_info_col">Кедр, дуб</td>
+                        <td class="item_info_col">Урюк</td>
+                        <td class="item_info_col">Вишня</td>
+                    </tr>
+                    <tr class="item_info_row">
+                        <td class="item_info_row_name">Сочетание с едой</td>
+                        <td class="item_info_col">Говядина</td>
+                        <td class="item_info_col">Баранина</td>
+                        <td class="item_info_col">Дичь (оленина, лосятина)</td>
+                    </tr>
+                    <tr class="item_info_row">
+                        <td class="item_info_row_name">Ранжирование</td>
+                        <td class="item_info_col">Топ 12% в мире</td>
+                        <td class="item_info_col">Топ 14% вин из Graves</td>
+                        <td class="item_info_col"></td>
+                    </tr>
+                </table>
+            </div>
 
-    <br>
-    <table class="item_info">
-        <tr class="item_info_row">
-            <td colspan="5"  class="item_info_header">Дополнительная информация</td>
-        </tr>
-        <tr class="item_info_row">
-            <td rowspan="3" class="item_info_decor_block"></td>
-            <td class="item_info_row_name">Что говорят люди</td>
-            <td class="item_info_col">Кедр, дуб</td>
-            <td class="item_info_col">Урюк</td>
-            <td class="item_info_col">Вишня</td>
-        </tr>
-        <tr class="item_info_row">
-            <td class="item_info_row_name">Сочетание с едой</td>
-            <td class="item_info_col">Говядина</td>
-            <td class="item_info_col">Баранина</td>
-            <td class="item_info_col">Дичь (оленина, лосятина)</td>
-        </tr>
-        <tr class="item_info_row">
-            <td class="item_info_row_name">Ранжирование</td>
-            <td class="item_info_col">Топ 12% в мире</td>
-            <td class="item_info_col">Топ 14% вин из Graves</td>
-            <td class="item_info_col"></td>
-        </tr>
-    </table>
-
-    <div class="footer">
-        &copy;&nbsp;Все права защищены.
+        </div>
+    
+        <div class="footer">
+            <div class="copyrights">
+                &copy;&nbsp;Все права защищены.
+            </div>
+        </div>
     </div>
 </body>
 </html>

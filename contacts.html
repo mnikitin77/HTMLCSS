@@ -6,35 +6,68 @@
     <link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">
-            <img class="logo" src="http://devicebox.ru/wp-content/uploads/2016/06/simple.jpg" alt="Логотип сайта" title="Логотип">
-        </a>
-        <ul class="menu">
-            <li><a class="menu_item" href="index.html">Главная</a></li>
-            <li><a class="menu_item" href="catalog.html">Каталог</a></li>
-            <li><a class="menu_item" href="contacts.html">Контакты</a></li>   
-        </ul>
-    </div>
-    <h1>Напишите нам</h1>
-    <form action="" class="contacts">
-        <label class="contacts_label contacts">Имя:<input class="input_text contacts_input contacts" type="text" placeholder="В а ш е  И м я"></label><br>
-        <label class="contacts_label contacts">Email:<input class="input_email contacts_input contacts" type="email" placeholder="mail@mail.ru"></label><br>
-        <label class="contacts_label contacts">Тема:<input class="input_text contacts_input contacts" type="text" placeholder="Т е м а"></label><br>
-        <br>
-        <textarea class="contacts_msg contacts" placeholder="В а ш е  с о о б щ е н и е:"></textarea><br>
-        <input class="contacts_btn contacts" type="submit" value="Отправить">
-        <input class="contacts_btn contacts" type="reset" value="Отмена">
-    </form>
-    <h3>Наш адрес</h3>
-    <ul>
-        <li><b>Телефон:&nbsp;</b>+7 (495) 322-22-32</li>
-        <li><b>Адрес:</b>ул. Большая Лубянка 2б Москва, Россия, 101000</li>
-        <li><b>email:&nbsp;</b>info@goodwine.ru</li>
-    </ul>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A84aede5c60977e261aea3fdd371d9da477c5e66fab45f18b56c285f0a5629d63&amp;width=659&amp;height=492&amp;lang=ru_RU&amp;scroll=true"></script>
-    <div class="footer">
-        &copy;&nbsp;Все права защищены.
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <img class="logo" src="http://devicebox.ru/wp-content/uploads/2016/06/simple.jpg" alt="Логотип сайта" title="Логотип">
+            </a>
+            <ul class="menu">
+                <li><a class="menu_item" href="index.html">Главная</a></li>
+                <li><a class="menu_item" href="catalog.html">Каталог</a></li>
+                <li><a class="menu_item" href="contacts.html">Контакты</a></li>   
+            </ul>
+        </div>
+        <div class="content">
+            <div class="contacts_page_block">
+                <h1>Напишите нам</h1>
+                <div class="contacts_form_block">
+                    <form action="" class="contacts">
+                        <div class="contacts_form_item_line">
+                            <div>
+                                <label class="contacts_label contacts" for="client_name">Имя:</label>
+                            </div>
+                            <div>
+                                <input id="client_name" class="input_text contacts_input contacts" type="text" placeholder="В а ш е  И м я">
+                            </div>
+                        </div>
+                        <div class="contacts_form_item_line">
+                            <div>
+                                <label class="contacts_label contacts" for="client_email">Email:</label>
+                            </div>
+                            <div>
+                                <input id="client_email" class="input_email contacts_input contacts" type="email" placeholder="mail@mail.ru">
+                            </div>
+                        </div>
+                        <div class="contacts_form_item_line">
+                            <div>
+                                <label class="contacts_label contacts" for="client_subject">Тема:</label>
+                            </div>
+                            <div>
+                                <input id="client_subject" class="input_text contacts_input contacts" type="text" placeholder="Т е м а">
+                            </div>
+                        </div>                                        
+                        <textarea class="contacts_msg contacts" placeholder="В а ш е  с о о б щ е н и е:"></textarea><br>
+                        <input class="contacts_btn contacts" type="submit" value="Отправить">
+                        <input class="contacts_btn contacts" type="reset" value="Отмена">
+                    </form>
+                </div>
+                <h3>Наш адрес</h3>
+                <ul class="contacts_list">
+                    <li><b>Телефон:&nbsp;</b>+7 (495) 322-22-32</li>
+                    <li><b>Адрес:</b>ул. Большая Лубянка 2б Москва, Россия, 101000</li>
+                    <li><b>email:&nbsp;</b>info@goodwine.ru</li>
+                </ul>
+                <div class="address_map">
+                    <!--<script class="map_src" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A84aede5c60977e261aea3fdd371d9da477c5e66fab45f18b56c285f0a5629d63&amp;width=659&amp;height=492&amp;lang=ru_RU&amp;scroll=true"></script>-->
+                    <script class="map_src" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A84aede5c60977e261aea3fdd371d9da477c5e66fab45f18b56c285f0a5629d63&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyrights">
+                &copy;&nbsp;Все права защищены.
+            </div>
+        </div>
     </div>
 </body>
 </html>
