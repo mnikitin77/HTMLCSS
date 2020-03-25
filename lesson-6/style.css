@@ -273,12 +273,12 @@ a {
     color: #FFFFFF;
 }
 
-.interested__lower_marker {
+.interested__marker-lower {
     width: 23px;
     margin-right: 19px;
 }
 
-.interested__lower_text {
+.interested__text-lower {
     width: 316px;
     margin-right: 32px;
 }
