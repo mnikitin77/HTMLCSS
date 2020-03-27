@@ -146,6 +146,10 @@ a {
     margin-bottom: 14px;
 }
 
+.projects {
+    margin-bottom: 112px;
+}
+
 .project__text {
     width: 70%;
     margin: 32px auto 64px;
@@ -203,13 +207,12 @@ a {
 
 .bottom {
     background: #316099;
-    margin-top: 112px;
     display: flex;
     flex-direction: column;
 }
 
 .interested  {
-    padding: 91px 100px 96px 116px;
+    padding: 91px 100px 96px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -328,6 +331,11 @@ a {
 
     .footer__item {
         max-width: 100%;
+        padding-bottom: 24px;
+    }
+
+    .footer__item:last-of-type {
+        padding-bottom: 0px;
     }
 }
 
@@ -382,6 +390,10 @@ a {
         line-height: 28px;
     }
 
+    .projects {
+        margin-bottom: 48px;
+    }
+
     .project__text {
         width: 100%;
         margin-bottom: 82px;
@@ -412,10 +424,6 @@ a {
     .project__item-small {
         margin-right: 0;
         margin-bottom: 16px;
-    }
-
-    .bottom {
-        margin-top: 48px;
     }
 
     .interested  {
@@ -455,7 +463,7 @@ a {
     }
     
     .footer__content  {
-        padding: 32px 0px 20px 0px;
+        padding: 32px 0px 32px 0px;
     }
     
     .footer__item {

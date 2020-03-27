@@ -1,20 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
+/*******************************************************************************/
+/*              Блоки .container, .bottom, .interested, footer__line и проч.   */
+/*              определены в файле style.css                                   */
+/*******************************************************************************/
 
 .contacts_text {
     font-weight: normal;
@@ -85,7 +72,8 @@ a {
     max-width: 940px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contacts__content__container {
@@ -94,6 +82,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.contacts-block__image {
+    display: none;
 }
 
 .contacts__content__info {
@@ -216,12 +208,98 @@ a {
 }
 
 .contacts__map {
-    padding: 0px 212px;
+    max-width: 940px;
     margin-bottom: 96px;
     display: flex;
     justify-content: center;
 }
 
+.map__image {
+    width: 100%;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 64px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer__content__contacts {
+    padding: 64px 0px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.footer_container_WIERD {
+    width: 100%;
+    padding: 96px 0px 64px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content-WIERD {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.footer__item-WIERD {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 24px;
+}
+
+.footer__item-WIERD:last-of-type {
+    padding-bottom: 0px;
+}
+
+.footer__item-WIERD__header {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+
+.footer__content-WIERD-links {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__item-WIERD-links {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 16px;
+}
+
+.footer__item-WIERD-links:last-of-type {
+    padding-bottom: 0px;
+}
+
+.footer__item-WIERD-links__header {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
 
 @media (max-width: 1024px) {
     .container {
@@ -234,11 +312,70 @@ a {
     }
 
     .contacts__banner {
-        margin: 40px 0px 50px 0px;
+        margin: 40px 0px 0px 0px;
     }
 
     .contacts__banner__text {
         max-width: 70%;
+    }
+
+    .contacts__content__container {
+        margin-bottom: 64px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts-block__image {
+        display: flex;
+        padding-top: 64px;
+    }
+
+    .contacts__content__info {
+        padding: 0px;
+        margin-top: 64px;
+    }
+
+    .contacts__content__info__block:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    .contacts__content__form {
+        margin-top: 64px;
+        padding: 54px;
+    }
+    
+    .contacts__content__form_heading {
+        width: 170px;
+        padding-bottom: 0px;
+        margin-bottom: -14px;
+    }
+    
+    .contacts__input {
+        width: 412px;
+        height: 70px;
+    }
+    
+    .contacts__text_area {
+        width: 412px;
+        height: 140px;
+    }
+    
+    .contacts_button {
+        padding: 22px 175px;
+        margin-top: 70px;
+    }
+
+    .contacts__map {
+        margin-bottom: 64px;
+    }
+
+    .footer_container_WIERD {
+        display: none;
+    }
+
+    .footer__content__contacts  {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -249,7 +386,7 @@ a {
     }
 
     .contacts__banner {
-        margin: 30px 0px 40px 0px;
+        margin: 30px 0px 0px 0px;
     }
 
     .contacts__banner__heading {
@@ -265,6 +402,72 @@ a {
         padding: 0px 17px;
         font-size: 16px;
         line-height: 30px;
+    }
+
+    .contacts__content__container {
+        margin-bottom: 32px;
+    }
+
+    .contacts-block__image {
+        padding-top: 48px;
+    }
+
+    .contacts__content__info {
+        padding: 0px;
+        margin-top: 64px;
+    }
+
+    .contacts__content__info__block {
+        margin-bottom: 32px;
+    }
+
+    .contacts__content__form {
+        width: 342px;
+        margin-top: 32px;
+        padding: 36px;
+    }
+    
+    .contacts__content__form_heading {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .contacts__content__form__block_label {
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    
+    .contacts__input {
+        width: 272px;
+        height: 46px;
+    }
+    
+    .contacts__text_area {
+        width: 272px;
+        height: 92px;
+    }
+    
+    .contacts_button {
+        padding: 10px 105px;
+        margin-top: 46px;
+    }
+
+    .contacts__map {
+        max-width:375px;
+        margin-bottom: 32px;
+    }
+
+    .map__image {
+        height: 349px;
+        object-fit: cover;
+    }
+
+    .footer__content__contacts  {
+        padding: 32px 0px 32px 0px;
     }
 }
 
